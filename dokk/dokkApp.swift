@@ -1,17 +1,12 @@
-//
-//  dokkApp.swift
-//  dokk
-//
-//  Created by Saurav Maheshkar on 29/06/2025.
-//
-
 import SwiftUI
 
 @main
 struct dokkApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+        
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
